@@ -1,0 +1,323 @@
+/*FONTS*/
+
+@font-face {
+    font-family:"brandon-grotesque";
+    src:url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/1da05b/0000000000000000000132df/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:200;
+}
+@font-face {
+    font-family:"timberline";
+    src:url("https://use.typekit.net/af/b423b9/00000000000000007735cc72/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b423b9/00000000000000007735cc72/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b423b9/00000000000000007735cc72/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+}
+@font-face {
+    font-family:"typeka";
+    src:url("https://use.typekit.net/af/09beb9/00000000000000007735adf6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/09beb9/00000000000000007735adf6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/09beb9/00000000000000007735adf6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-display:auto;
+    font-style:normal;
+    font-weight:400;
+}
+
+/*---ALL PAGES---*/
+
+/*GENERAL*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body {
+    background-color: #F7F5F4;
+}
+a:link, a:visited {
+    color: #7d8d35;
+}
+
+/*HEADER*/
+
+.leaf-top {
+    width: 20%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+.leaf-bottom {
+    width: 30%;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1;
+}
+.head {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 5px;
+}
+.tape {
+    width: 30vw;
+    float: left;
+    margin-top: 30px;
+    vertical-align: baseline;
+    position: relative;
+}
+.banner {
+    font-family: timberline, "Brush Script MT", cursive;	
+    font-size: 9vw;
+    color: #000000;
+    font-weight: normal;
+    float: right;
+    position: relative;
+    margin-bottom: 0;
+    align-self: flex-end;
+}
+
+/*NAVIGATION*/
+
+nav {
+    clear: both;
+    text-align: center;
+    background: #454f7d url(../images/nav-bar.png) repeat top left;
+    border-radius: 25px;
+    height: 3vw;
+    width: 75%;
+    margin: 0 auto;
+}
+nav a:link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 2vw;
+    vertical-align: top;
+}
+nav a:visited {
+    color: #ffffff;
+}
+nav a:hover {
+    color: #d4be72;
+    transition: 0.2s;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 3%;
+}
+
+/*CONTENT*/
+
+.content-box {
+    width: 70%;
+    background-color: #ffffff;
+    border: 2px solid #d4be72;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    position: relative;
+    height: fit-content;
+}
+.content-box hr {
+    border: 1px solid #d4be72;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+#together {
+    background-image: url(../images/large-banner-pic.jpg);
+    background-size: cover;
+    opacity: .8;
+    width: 100%;
+    text-align: center;
+    height: 28vw;
+    padding: 40px;
+    box-sizing: border-box;
+}
+#together h2 {
+    color: #ffffffbb;
+    font-family: timberline, "Brush Script MT", cursive;
+    font-size: 6vw;
+    font-weight: normal;
+    word-spacing: 40px;
+    padding-top: 35px;
+}
+#together hr {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: -35px;
+    margin-bottom: 5px;
+}
+#together hr:nth-child(4) {
+    border: 1px solid #ffffff;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+#together span {
+    color: #ffffffbb;
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 2vw;
+    font-weight: normal;
+}
+.content-box p {
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 14pt;
+    padding: 15px 80px;
+}
+.p-center {
+    text-align: center;
+}
+#circle {
+    background-color: #F7F5F4;
+    width: 555px;
+    height: 555px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 1px solid #d4be72;
+    border-radius: 100%;
+    padding-top: 55px;
+    box-sizing: border-box;
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 14pt;
+}
+#circle img {
+    width: 80%;
+}
+#circle hr {
+    border: 1px solid #454f7d;   
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+}
+.columns {
+    column-count: 2;
+    column-gap: 70px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: #d4be72;
+    padding: 30px;
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 14pt;
+    text-align: justify;
+}
+.bottom-rule {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+h2 {
+    font-family: Timberline, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 50pt;
+    text-align: center;
+    color: #454f7d;
+}
+
+/*TRAVEL*/
+
+#travel {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+#travel br {
+    font-size: 8pt;
+}
+#travel hr {
+    border: 1px solid #000000;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Q&A*/
+
+#qa-columns {
+    column-count: 2;
+    column-gap: 70px;
+    column-rule-style: solid;
+    column-rule-width: 1px;
+    column-rule-color: #d4be72;
+    padding: 15px 120px;
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 14pt;
+    text-align: justify;
+}
+.qa {
+    padding-bottom: 50px;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+}
+
+/*PARTY*/
+
+.round {
+    border-radius: 100%;
+    width: 225px;
+    height: 225px;
+    border: 2px solid #d4be72;
+}
+#party img {
+    display: block;
+    margin: 0 auto;
+}
+#party p {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 20px 40px 27px 40px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    text-align: justify;
+    background-color: #F7F5F4;
+    border: 2px solid #d4be72;
+}
+.s-center {
+    display: block;
+    text-align: center;
+    font-family: timberline;
+    font-size: 22pt;
+    margin-top: -40px;
+    color: #454f7d;
+}
+.s2-center {
+    display: block;
+    text-align: center;
+    font-family: typeka;
+    font-size: 12pt;
+    margin-top: -50px;
+    font-weight: 600;
+    color: #7d8d35;
+}
+
+/*REGISTRY*/
+.registry-links a:link, .registry-links a:visited {
+    color: #ffffff;
+}
+.registry-button {
+    background: #454f7d url(../images/nav-bar.png) repeat top left;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 20rem;
+    padding: 10px 5px;
+    border-radius: 20px;
+    font-family: Typeka, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; 
+    font-size: 14pt;
+    text-decoration: none;
+}
+.registry-button:hover {
+    opacity: .8;
+    transition: .2s;
+}
